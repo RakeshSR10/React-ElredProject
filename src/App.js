@@ -1,10 +1,21 @@
 // import './App.css';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import EditBio from "./Components/EditBio";
+import MyBio from "./Components/MyBio";
+import ResumeData from "./Components/ResumeData";
+
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>Hello world</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MyBio />} />
+        <Route path="/editbio" element={<EditBio />} />
+        <Route path="/resumedata" element={<ResumeData />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
