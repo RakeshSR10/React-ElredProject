@@ -1,0 +1,17 @@
+.about-me {
+    width: 375px;
+    height: 812px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.about-me {
+
+}
+
+.resume {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    cursor: pointer;
+}
